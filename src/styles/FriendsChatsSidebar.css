@@ -1,0 +1,47 @@
+.friendsChatsSidebar {
+	width: 30%;
+	min-height: 80vh;
+	background: #f6f6f6;
+	border-right: 1px solid lightgrey;
+	overflow-y: scroll;
+}
+
+.friendsChatsSidebar::-webkit-scrollbar {
+	display: none;
+}
+
+.friendsChatsSidebar__friend {
+	display: flex;
+	background-color: #fff;
+	height: 70px;
+	border-bottom: 1px solid lightgrey;
+	transition: background-color 150ms linear;
+}
+
+.friendsChatsSidebar__friend:hover {
+	cursor: Pointer;
+	background-color: #f6f6f6;
+}
+
+.friendsChatsSidebar__friendActive {
+	width: 4px;
+	height: 100%;
+	background: royalblue;
+}
+
+.friendsChatsSidebar__friend > img {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	margin: 0 10px 0 0;
+}
+
+@media (max-width: 760px) {
+	.friendsChatsSidebar {
+		width: 100%;
+	}
+
+	.friendsChatsSidebar__friend {
+		width: 100%;
+	}
+}

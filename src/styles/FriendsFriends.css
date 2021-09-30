@@ -1,0 +1,71 @@
+.friendsFriends {
+	padding: 10px;
+}
+
+.friendsFriend {
+	display: flex;
+	cursor: pointer;
+	margin: 0 0 10px 0;
+}
+
+.friendsFriend__right {
+	display: flex;
+	flex-direction: column;
+}
+
+.friendsFriend > img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	margin: 0 10px 0 0;
+}
+
+.friendsFriend__right__buttons {
+	display: flex;
+	flex: 1;
+	align-items: flex-end;
+	padding: 0 0 10px 0;
+}
+
+.friendsFriend__right__buttons > * {
+	display: flex;
+	align-items: center;
+	margin: 0 10px 0 0 !important;
+}
+
+.friendsFriend__right__buttons > * > *:first-child {
+	margin: 0 10px 0 0;
+	font-size: 20px;
+}
+
+.friendsFriend__right__mobileButtons {
+	display: none;
+}
+
+@media (max-width: 760px) {
+	.friendsFriend__right {
+		flex-direction: row;
+		flex: 1;
+	}
+
+	.friendsFriend__right__buttons {
+		display: none;
+	}
+
+	.friendsFriend__right__mobileButtons {
+		display: flex;
+		flex: 1;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.friendsFriend__right__mobileButtons > *:first-child {
+		color: #1976D2;
+		align-items: center;
+		margin: 0 10px 0 0;
+	}
+
+	.friendsFriend__right__mobileButtons > *:nth-child(2) {
+		color: #D32F2F;
+	}
+}

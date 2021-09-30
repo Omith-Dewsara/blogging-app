@@ -1,0 +1,153 @@
+.fullBlogPost {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	padding: 0 0 40px 0;
+}
+
+.fullBlogPost > h2 {
+	margin: 0 auto 0 0;
+	padding: 10px 0 0 20px;
+}
+
+.fullBlogPost__content {
+	width: 60%;
+	padding: 20px 10px;
+	background-color: #f6f6f6;
+	flex: 1;
+	padding: 20px 10px 30px 10px;
+}
+
+.fullBlogPost__content > p {
+	margin: 10px 0;
+}
+
+.fullBlogPost__content > img {
+	width: 100%;
+	height: 200px;
+	margin: 10px 0;
+	object-fit: contain;
+}
+
+.fullBlogPost__buttons {
+	margin: 50px 0 0 0;
+	padding: 0 0 0 20px;
+	width: 100%;
+}
+
+.fullBlogPost__Postbuttons {
+	margin: 20px 0 0 0;
+	display: flex;
+	justify-content: center;
+}
+
+.fullBlogPost__comments {
+	width: 100%;
+	padding: 20px;
+	margin: 20px 0 0 0	;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+.fullBlogPost__comments::-webkit-scrollbar {
+	width: 5px;
+	background-color: #000;
+}
+
+.fullBlogPost__comments > div:nth-child(even) {
+	background: #f6f6f6;
+}
+
+.fullBlogPost__comment {
+	padding: 8px 5px;
+	display: flex;
+} 
+
+.fullBlogPost__comment > img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 0 10px 0 0;
+}
+
+.fullBlogPost__comment__right > div {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.fullBlogPost__commentForm {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.fullBlogPost__commentForm > *:first-child {
+	width: 100% !important;
+	flex: 0.5;
+}
+
+.delete-post-buttons {
+	display: flex;
+	margin: 10px 0 0 0;
+}
+
+.delete-post-buttons > *:first-child {
+	margin: 0 10px 0 0;
+}
+
+.fullBlogPost__images {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px 0 0 0;
+}
+
+.fullBlogPost__images > img, 
+.fullBlogPost__mainImg {
+	width: 500px;
+	height: 200px;
+	object-fit: contain;
+	margin: 0 0 10px 0;
+}
+
+/* loading styles  */
+.fullBlogPost__title--loading,
+.fullBlogPost__content--loading,
+.fullBlogPost__mainImg--loading {
+	background: lightgrey;
+	border-radius:  0 15px 15px 0;
+	height: 44px;
+}	
+
+.fullBlogPost__mainImg--loading {
+	margin: 20px;
+	width: 50%;
+	height: 250px;
+}
+
+.fullBlogPost__content--loading {
+	height: 200px;
+	width: 80%;
+}
+
+.fullBlogPost--loadingOver {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	.fullBlogPost__content {
+		width: 90%;
+	}
+
+	.fullBlogPost__commentForm > *:first-child {
+		flex: 0.8;
+	}
+
+	.fullBlogPost__images > img,
+	.fullBlogPost__mainImg {
+		width: 90%;
+	}
+}

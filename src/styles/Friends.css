@@ -1,0 +1,71 @@
+.friends {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.friends__optionBar {
+	width: 100%;
+	display: flex;
+	padding: 5px 10px 0 10px;
+}
+
+.friends__optionBar > * {
+	flex: 1;
+	margin: 0 10px 0 0 !important;
+}
+
+.friends__optionBar > * > *:first-child {
+	margin: 0 10px 0 0;
+	font-size: 25px;
+}
+
+.friends__mobileNavBar {
+	position: fixed;
+	top: 75px;
+	right: 5px;
+	display: none;
+}
+
+.friends__mobileNavBar > div {
+	width: 30px;
+	height: 4px;
+	border-radius: 5px;
+	margin: 0 0 3px 0;
+	background-color: #000;
+}
+
+@media (max-width: 760px) {
+	.friends__mobileNavBar {
+		display: block;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+	.friends__optionBar {
+		position: fixed;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		padding: 10px;
+		top: 65px;
+		background: #f6f6f6;
+		overflow: hidden;
+		pointer-events: none;
+		transition: transform 100ms linear;
+		transform: translateY(-100%);
+		z-index: 1;
+	}
+
+	.friends__activeOptionBar {
+		pointer-events: auto;
+		transform: translateY(0);
+	}
+
+	.friends__optionBar > * {
+		width: 100%;
+		display: flex !important;
+		justify-content: flex-start !important;
+		margin: 0 0 5px 0 !important;
+	}
+}

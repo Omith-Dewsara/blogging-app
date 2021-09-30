@@ -1,0 +1,12 @@
+.friendsMessage {
+	width: fit-content;
+	padding: 10px;
+	font-size: 20px;
+	margin: 0 0 10px 0;
+}
+
+.myMessage {
+	background-color: #1976D2 !important;
+	color: #fff;
+	margin: 0 0 10px auto;
+}

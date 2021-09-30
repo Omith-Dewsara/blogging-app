@@ -1,0 +1,13 @@
+.friendsChat {
+	display: flex;
+	flex: 1;
+	overflow: hidden;
+}
+
+@media (max-width: 760px) {
+	.friendsChat {
+		width: 100%;
+		position: relative;
+		overflow-x: hidden;
+	}
+}

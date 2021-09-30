@@ -1,0 +1,131 @@
+.createBlogPost__main {
+	display: flex;
+	flex-direction: column;
+}
+
+.createBlogPost {
+	padding: 20px;
+}
+
+.createBlogPost > h1 {
+	border-bottom: 2px solid lightgrey;
+	margin: 0 0 20px 0;
+	padding: 0 0 5px 0;
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+}
+
+.createBlogPost > h1 > *:first-child {
+	margin: 0 10px 0 0;
+}
+
+.createBlogPost__main > textarea {
+	height: 500px;
+	padding: 10px;
+	font-size: 18px;
+	font-family: sans-serif;
+	margin: 10px 0;
+	border: 2px solid lightgrey;
+	outline: none;
+	border-radius: 10px;
+}
+
+.createBlogPost__main > textarea:focus {
+	border-color: #1976D2;
+}
+
+.createBlogPost__addImg > *:first-child {
+	display: none;
+}
+
+.createBlogPost__images {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.createBlogPost__images > div {
+	width: 100px;
+	height: 100px;
+	margin: 0 10px 10px 0;
+	border: 1px solid #000;
+	position: relative;
+}
+
+.createBlogPost__postTitle {
+	margin: 20px 0 10px 0 !important;
+}
+
+.createBlogPost__images {
+	margin: 20px 0 0 0;
+}
+
+.createBlogPost__images > div > *:nth-child(2) {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	cursor: pointer;
+	font-size: 25px;
+	transition: color 100ms linear;
+}
+
+.createBlogPost__images > div > *:nth-child(2):hover {
+	color: red;
+}
+
+.createBlogPost__images > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.createBlogPost__postButton {
+	margin: 20px 0 0 0 !important;
+	width: 50%;
+	display: block !important;
+	margin: 20px auto 0 auto !important;
+}
+
+.createBlogPost__mainImg {
+	display: flex;
+}
+
+.createBlogPost__mainImg > img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.createBlogPost__mainImg > div {
+	margin: 0 0 0 10px;
+}
+
+.createBlogPost__mainImg > div > div {
+	margin: 0 0 8px 0;
+	font-size: 18px;
+}
+
+.createBlogPost__posting {
+	position: fixed;
+	width: 100%;
+	min-height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.createBlogPost__postingOver {
+	display: none;
+}
+
+.createBlogPost__posting > div {
+	font-size: 22px;
+	margin: 10px 0 0 0;
+	color: #fff;
+	font-weight: 600;
+}

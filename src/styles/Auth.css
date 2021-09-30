@@ -1,0 +1,53 @@
+.auth {
+	display: flex;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.auth > form {
+	/*width: 50%;*/
+	flex: .5;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.auth > form > * {
+	width: 80%;
+	margin: 0 0 20px 0;
+}
+
+.auth > form > * > label {
+	margin: 0 0 10px 0;
+}
+
+.auth > form > div > a {
+	cursor: pointer;
+	color: #981A8B;
+	text-decoration: underline;
+}
+
+.auth__right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex: 0.5;
+}
+
+.auth__right > img {
+	width: 500px;
+}
+
+@media (max-width: 800px) {
+	.auth > form {
+		width: 100%;
+		flex: 1;
+	}
+
+	.auth__right {
+		display: none;
+	}
+}

@@ -1,0 +1,89 @@
+.friendsChatsContainer {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.friendsChatsContainer__Header {
+	border-bottom: 1px solid lightgrey;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.friendsChatsContainer__Header > *:first-child {
+	display: none;
+}
+
+.friendsChatsContainer__Header > div {
+	display: flex;
+	align-items: center;
+}
+
+.friendsChatsContainer__Header > div > img {
+	width: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+	height: 50px;
+	margin: 0 10px 0 0;
+}
+
+.friendsChatsContainer__messages {
+	flex: 1;
+	overflow-y: scroll;
+	width: 100%;
+	padding: 20px;
+}
+
+.friendsChatsContainer__messages::-webkit-scrollbar {
+	display: none;
+}
+
+.friendsChatsContainer__footer {
+	display: flex;
+	width: 90%;
+	position: sticky;
+	bottom: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #f6f6f6;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.friendsChatsContainer__footer > *:first-child {
+	flex: 1;
+}
+
+@media (max-width: 760px) {
+	.friendsChatsContainer {
+		transform: translateX(100%);
+		min-height: 82.2vh;
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		transition: transform 100ms linear;
+		height: calc(100vh - 70px);
+	}
+
+	.friendsChatsContainerActive {
+		transform: translateX(0);
+	}
+
+	.friendsChatsContainer__Header > *:first-child {
+		display: block;
+	}
+
+	.friendsChatsContainer__Header,
+	.friendsChatsContainer__Header > div {
+		display: flex;
+		align-items: center;
+	}
+
+	.friendsChatsContainer__Header > * > * {
+		font-size: 25px;
+	}
+
+	.friendsChatsContainer__Header > div > img {
+		margin: 0 10px 0 15px;
+	}
+}

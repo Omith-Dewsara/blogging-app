@@ -1,0 +1,29 @@
+.blogPost {
+	display: flex;
+	padding: 0 10px 10px 0;
+	cursor: pointer;
+	overflow: hidden;
+	height: 140px;
+	margin: 0 0 15px 0;
+}
+
+.blogPost__left {
+	width: 190px !important;
+	margin: 0 10px 0 0;
+}
+
+@media (max-width: 800px) {
+	.blogPost {
+		flex-direction: column;
+		height: fit-content;
+		padding: 0;
+	}
+
+	.blogPost__left {
+		width: 100% !important;
+	}
+
+	.blogPost__right {
+		padding: 10px;
+	}
+}

@@ -1,0 +1,189 @@
+.home {
+	width: 100%;
+	min-height: 100vh;
+	padding: 0 0 50px 0;
+}
+
+.home__sendMsg {
+	width: 50% !important;
+}
+
+.home__sendMsg__header {
+	display: flex;
+	align-items: center;
+	margin: 0 0 20px 0 !important;
+}
+
+.home__sendMsg__header > *:first-child {
+	margin: 0 10px 0 0 !important;
+}
+
+.home__top {
+	width: 100%;
+}
+
+.home__sendMsg > form {
+	display: flex;
+	flex-direction: column;
+}
+
+.home__sendMsg > form > *:first-child {
+	margin: 0 0 20px 0 !important;
+}
+
+.home__top__coverImg {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_509107562_2000133320009280346_351827.jpg);
+	background-size: cover;
+}
+
+.home__topPfp {
+	width: 200px !important;
+	height: 200px !important;
+	border-radius: 50%;
+	object-fit: cover !important;
+	border: none;
+	bottom: -100px !important;
+	left: 20px !important;
+	position: absolute !important;
+}
+
+.home__main {
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px 20px;
+}
+
+.home__main > * {
+	margin: 0 0 0 20px !important;
+	text-decoration: none;
+}
+
+.home__mobileMain {
+	display: none !important;
+}
+
+.home__footer {
+	padding: 70px 0 0 30px;
+}
+
+.home__footer > p {
+	width: 60%;
+	margin: 20px 0 0 0;
+}
+
+.home__footer__blogInfo {
+	margin: 20px 0 0 0;
+	line-height: 30px;
+	border-left: 2px solid lightgrey;
+	padding: 0 0 0 10px;
+}
+
+.home__footer__blogInfo > div {
+	display: flex;
+	align-items: center;
+}
+
+.home__footer__blogInfo > div > * {
+	margin: 0 10px 0 0;
+}
+
+.home__footer__buttons {
+	margin: 20px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.home__footer__buttons > * {
+	margin: 0 20px 0 0 !important;
+	display: flex !important;
+	align-items: center;
+}
+
+.add-blog-button {
+	width: 50px !important;
+	height: 50px !important;
+	border-radius: 50% !important;
+	position: fixed !important;
+	right: 30px;
+	font-size: 25px !important;
+	bottom: 30px;
+}
+
+/* Loading screen styles  */
+.home__userNameloading {
+	width: 200px;
+	background: #f6f6f6;
+	border-radius: 8px;
+	height: 36px;
+	margin: 10px 0 0 0;
+}
+
+.home__footer__blogInfo--loading {
+	background-color: #f6f6f6;
+	width: fit-content;
+	padding-right: 30px;
+	border-radius: 8px;
+	width: 300px;
+	height: 300px;
+}
+
+.footer__loadingAboutMe {
+	width: 400px !important;
+	border-radius: 8px;
+	background: #f6f6f6;
+	height: 60px;
+}
+
+@media (max-width: 800px) {
+	.home__sendMsg {
+		width: 90% !important;
+	}
+
+	.home__top__coverImg {
+		height: 200px;
+	}
+
+	.home__topPfp {
+		width: 150px !important;
+		height: 150px !important;
+		bottom: -70px !important;
+		left: 10px !important;
+	}
+
+	.home__main > * {
+		display: none !important;
+	}
+
+	.home__mobileMain {
+		display: flex !important;
+		justify-content: flex-end;
+	}
+
+	.home__mobileMain > a {
+		text-decoration: none;
+	}
+
+	.home__footer {
+		padding: 20px;
+	}
+
+	.home__footer > p {
+		width: 99%;
+	}
+
+	.home__footer__buttons > * {
+		margin: 0 0 1px 0 !important;
+	}
+
+	/* loading styles  */
+	.footer__loadingAboutMe {
+		width: 95% !important;
+	}
+
+	.home__footer__blogInfo--loading {
+		width: 90%;
+	}
+}

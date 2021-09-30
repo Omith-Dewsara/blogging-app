@@ -1,0 +1,73 @@
+.friendReq {
+	padding: 20px;
+}
+
+.friendReq__container {
+	display: flex;
+	margin: 0 0 10px 0;
+}
+
+.friendReq__container > img {
+	width: 100px;
+	height: 80px;
+	object-fit: cover;
+	margin: 0 10px 0 0;
+}
+
+.friendReq__right {
+	display: flex;
+	flex-direction: column;
+}
+
+.friendReq__right__desktopButtons {
+	display: flex;
+	flex: 1;
+	align-items: flex-end;
+}
+
+.friendReq__right__desktopButtons > * {
+	margin: 0 10px 0 0 !important;
+	display: flex !important;
+	align-items: center !important;
+}
+
+.friendReq__right__desktopButtons > * > *:first-child {
+	margin: 0 5px 0 0;
+	font-size: 20px;
+}
+
+.friendReq__right__mobileButtons {
+	display: none;
+}
+
+@media (max-width: 760px) {
+	.friendReq__right__desktopButtons  {
+		display: none;
+	}	
+
+	.friendReq__right {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.friendReq__right__mobileButtons {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.friendReq__right__mobileButtons > * {
+		display: grid !important;
+		place-items: center !important;
+	}
+
+	.friendReq__right__mobileButtons > *:first-child {
+		color: #2E7D38;
+		margin: 0 10px 0 0;
+	}
+
+	.friendReq__right__mobileButtons > *:nth-child(2) {
+		color: #D32F2F;
+	}
+}
